@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005688",
-  "source": "openneuro",
-  "source_id": "ds005688",
+  "pipeline_stage": "validated",
   "title": "visStim",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Henry Tan": {},
     "Devon Griggs": {},
@@ -15,27 +15,75 @@
     "Nels Schimek": {},
     "Pierre Mourad": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005688.v1.0.1",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005688",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005688",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "R01 NS119395"
+      "funder_name": "NIH",
+      "award_number": "R01 NS119395"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "P51 OD010425"
     }
   ],
-  "acknowledgements": "An immense thanks to all contributors for their support."
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "8.9 GB (267 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This dataset comprises electrocorticography (ECoG) recordings from 20 C57BL/6 mice exposed to combinations of diagnostic ultrasound (tDUS) and visual stimuli to investigate how transcranial ultrasound modulates visual cortex responses. Recordings from visual and somatosensory cortices were collected at 20 kS/s during three experimental conditions: light-only, ultrasound-only, and combined ultrasound with light stimulation. The study demonstrates that tDUS enhances exogenously induced brain activity when combined with visual stimuli, with implications for understanding ultrasound-mediated neuromodulation.",
+  "methods_description": "ECoG electrodes were implanted targeting visual and somatosensory cortices in C57BL/6 mice. Stimulation protocols included blinking light stimuli (10 seconds per event) and transcranial diagnostic ultrasound delivered via a P21x5-1 scan head (Sonosite MicroMaxx system). Baseline and event-triggered ECoG signals were recorded using LabChart software at 20 kS/s with filtering applied (5–55 Hz). RMS values were normalized to baseline activity for comparative analysis.",
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "ultrasound neuromodulation"
+    },
+    {
+      "term": "visual cortex"
+    },
+    {
+      "term": "brain stimulation"
+    },
+    {
+      "term": "mouse model"
+    },
+    {
+      "term": "neural activity"
+    }
+  ],
+  "source_hash": "9aa4b2b2ebbaea16f53cd6e9c6a02579615253dc4ea46c99143dc2b3eea2cb49"
 }
