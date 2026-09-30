@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "visStim",
-  "description": "This dataset contains electrocorticography (ECoG) recordings from three cohorts of C57BL/6 mice examining how transcranially delivered diagnostic ultrasound (tDUS) modulates cortical responses to a blinking light stimulus. Mice were exposed to combinations of tDUS and light stimulation, with electrodes targeting visual and somatosensory cortices, to investigate ultrasound's potential to intentionally modulate brain activity for future clinical and therapeutic applications.",
-  "methods_description": "ECoG electrodes targeting visual and somatosensory cortices recorded continuous brain activity at 20 kS/s, filtered 5–55 Hz, using LabChart software. Mice were exposed to blinking light stimuli (10 seconds per event) and/or tDUS delivered via a P21x5-1 scan head (Sonosite MicroMaxx system). RMS values were computed and normalized to baseline activity for statistical comparison, with analysis performed in MATLAB.",
+  "description": "Electrocorticography (ECoG) recordings from 20 C57BL/6 mice in three cohorts: blinking light only, transcranial diagnostic ultrasound (tDUS) only, and combined tDUS with light. The dataset was collected to test how tDUS modulates the visual cortex's response to external visual stimulation. It includes raw, event-triggered, and processed ECoG data.",
+  "methods_description": "ECoG electrodes targeted the visual and somatosensory cortices. Signals were recorded at 20 kS/s with LabChart and filtered at 5-55 Hz. Mice received 10-second blinking light events and tDUS delivered through a P21x5-1 scan head on a Sonosite MicroMaxx system. RMS values were normalized to baseline and analyzed in MATLAB.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,7 +24,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
-      "term": "ultrasound"
+      "term": "ECoG"
+    },
+    {
+      "term": "diagnostic ultrasound"
     },
     {
       "term": "Visual Cortex",
@@ -32,15 +35,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D014793"
     },
     {
-      "term": "Mice",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D051379"
+      "term": "mouse model"
     },
     {
-      "term": "brain stimulation"
+      "term": "visual stimulation"
     },
     {
-      "term": "transcranial ultrasound stimulation"
+      "term": "neuromodulation"
     }
   ],
   "related_identifiers": [
@@ -75,7 +76,7 @@
     "eeg"
   ],
   "sizes": [
-    "8.9 GB (267 files)"
+    "8.28 GB (267 files)"
   ],
   "formats": [
     ".eeg",
